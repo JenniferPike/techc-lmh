@@ -1,0 +1,33 @@
+.partners {
+    margin-top: 24px;
+    margin-bottom: 41px;
+    h2{
+        text-align: center;
+        padding-bottom:30px;
+    }
+}
+.partner{
+    display:flex;
+    justify-content: center;
+    img{
+        width:86%;
+    }
+    .icube{
+        //had to use px here because this image blows up on safari
+        width:180px;
+        height:160px;
+    }
+}
+
+// PHONES AND SMALLER
+@media (min-width:580px){
+    .partnersImages{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .partner img {
+        width: 50%;
+    }
+}

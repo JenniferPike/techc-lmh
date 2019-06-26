@@ -1,0 +1,92 @@
+main, footer{
+    background:$bgcolor1;
+}
+.sectionOneTagline{
+    //add coverphoto behind #ITriedTherapy to make it pop more.
+    // background-image: url(../assets/john-mark-arnold-mvNRuUKs6NA-unsplash.jpg);
+    height: 20vh;
+    background-size: cover;
+    background-position: right;  
+    h1{
+        font-size:1.7rem;
+        text-align:center;
+        padding-top:50px;
+    } 
+}
+.blogTitle p{
+    margin-top:15px;
+    padding:10px 0 10px 0;
+    text-align:center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.blogTitle{
+    p:before,
+    p:after{
+        content:'';
+        border-top:2px solid $bgcolor3;
+        margin: 0 6px 0 0;
+        flex: 1 0 20px;
+    }
+    p:after{
+       margin:0 0 0 6px;
+    }
+    //had to google the before and after here followed this article https://www.trysmudford.com/blog/css-header-legend/
+}
+h3{
+    padding:5px 0 2px 0;
+}
+h4{
+    padding-bottom:8px;
+}
+h3 a{
+    margin:0;
+    color: $fontcolor2;
+    font-family:$font2;
+    font-weight:900;
+    font-size:0.9rem;
+}
+h4 a{
+    color:$fontcolor1;
+    font-family:$font1;
+    font-weight:400;
+    font-size:0.7rem;
+}
+.blogPostInfo p{
+    color:$fontcolor3;
+    font-family:$font2;
+    font-size:0.6rem;
+    padding-bottom:20px;
+}
+h4 a:hover{
+    color:$fontcolor2;
+}
+.blogPostImage:hover{
+    overflow:hidden;
+    // height: 400px;
+    vertical-align:auto;
+    img:hover{
+        transition: transform .8s ease;
+        transform:scale(1.1);
+        
+    }
+}
+
+//IPAD STYLES FOR HEADER
+@media (min-width: 768px){
+    .userPosts{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .blogPost{
+        width:30%;
+    }
+}
+
+
+

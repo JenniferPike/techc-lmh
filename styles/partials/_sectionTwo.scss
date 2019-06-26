@@ -1,0 +1,98 @@
+.sectionTwo {
+    margin-top: 30px;
+    padding-bottom:30px;
+    h3{
+        color:$fontcolor2;
+        font-family:$font1;
+        font-weight: 800;
+        font-size: 0.9rem;
+    }
+    a{
+        color:white;
+        font-family:$font1;
+        font-weight:800;
+        font-size:0.7rem;
+    }
+}
+.shareYourStory,
+.signPetition,
+.featuredStory{
+    margin-bottom:25px;
+    position:relative;
+    height: 190px;
+    background-size: cover;
+    a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 15px 0 15px;
+    }
+}
+.shareYourStory{
+    background-image: url(../assets/share.jpeg); 
+    background-position: center;  
+}
+.signPetition{
+    background-image: url(../assets/petition.jpg);
+    background-repeat: no-repeat;
+    background-position: center top; 
+}
+.featuredStory{
+    background-image: url(../assets/Jay.jpeg);
+    
+}
+.overlay{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background: rgb(46,46,46);
+    background: linear-gradient(0deg, rgba(46,46,46,0.7861345221682423) 50%, rgba(101,198,215,0) 100%); 
+}
+.info {
+    height: 190px;
+    display: flex;
+    a:hover{
+        color:$fontcolor2;
+    }
+}
+
+// PHONES AND SMALLER
+@media (min-width: 480px){
+    .shareYourStory,
+    .signPetition,
+    .featuredStory{
+        min-height: 288px;
+    }
+}
+@media (min-width: 580px){
+    .shareYourStory,
+    .signPetition,
+    .featuredStory{
+        min-height: 400px;
+    }
+}
+
+//IPAD STYLES FOR HEADER
+@media (min-width: 768px){
+    .sectionTwo{
+        display: flex;
+        justify-content: space-around;
+    }
+    .shareYourStory{
+        width: 56%;
+        min-height: 380px;  
+    }
+    .topStories{
+        width:40%;
+        padding-bottom:20px;
+        .widerScreens{
+            min-height:50px;
+            margin:0;
+        }
+    }
+    .info{
+        align-items: stretch;
+    }
+}

@@ -1,0 +1,89 @@
+header{
+    box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.65);
+    background-color: #EBEBEC;
+    margin-bottom:10px;
+}
+
+.headerInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0;
+}
+.headerLogo{
+    width:220px;
+}
+.menuButton{
+    .hamburger {
+        border: none;
+        background: none;
+        color:$bgcolor2;
+        font-size:1.2rem;
+    }
+}
+.responsive{
+    display:none;
+}
+.show{
+    display:block;
+    width:100%;
+    padding-bottom: 5px;
+}
+.headerNav{
+    ul{
+        font-size:0.4rem;
+    }
+    li{
+        border:2px solid black;
+        padding:6px;
+        text-align: center;
+        margin-top: 15px;
+    }
+    a{
+        color:$fontcolor1;
+        font-size:0.5rem;
+    }
+    .therapists{
+        background:$bgcolor2;
+        a{
+            color:white;
+        }
+    }
+}
+
+//IPAD STYLES FOR HEADER
+@media (min-width: 768px){
+    header .wrapper{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .headerInfo{
+        width:30%;
+    }
+    .hamburger{
+        display:none;
+    }
+    .headerNav{
+        width:60%;
+        display: flex;
+        li{
+            padding: 12px 17px 0px 26px;
+            margin-bottom: 10px;
+            margin-top: 16px;
+        }
+    }
+    .show{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+    }
+}
+@media(min-width:940px){
+    .headerNav li{
+        padding: 12px 31px 0px 31px;
+    }
+}
+
+
+
+
